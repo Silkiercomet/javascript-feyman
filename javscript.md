@@ -2,7 +2,7 @@
 
 es un libro dirigido a presentar todos las cosas extrañas y comportamientos de javascript, tanto para programadores que desean dominar el lenguaje como para aquellos que quieren empezar a aprenderlo, aunque ambos desean lo mismo 
 
-el auto reconoce que muchos temas tratados en este libro son densos y muy complicados, recomienda no solo leer un capitulo y saltar al suguiente, si no, leer, re-leerlo, practicarlo e investigar para poder sacarle el maximo provecho al contenido
+el auto reconoce que muchos temas tratados en este libro son densos y muy complicados, recomienda no solo leer un capitulo y saltar al siguiente, si no, leer, re-leerlo, practicarlo e investigar para poder sacarle el maximo provecho al contenido
 
 # first chapter
 
@@ -22,7 +22,7 @@ cada documento que termine en .js es considerado un programa de javascript inclu
 
 los datos primitivas son definidos normalmente como valores puros, es un valor asignado a una variable, y estos pueden ser string, number, boolean, undefined, null (SYMBOL tambien se usa para definir un valor unico pero muy poco comun fuera de low-code)
 
-* string : se define usando "" o '' todo valor en medio de los puntos sera evaluado como una cadena de texto, tambien se puede usar `` que tiene una funcion especial y es que valores dinamicos pueden ser definidos dentro de la cadena usando la sintaxis ${valorDinamico} solo se deben usar cuandos ea apropiado y para cadenas normales es recomendable escoger un metodo de definirlas y mantenerlo todo el programa
+* string : se define usando "" o '' todo valor en medio de los puntos sera evaluado como una cadena de texto, tambien se puede usar `` que tiene una funcion especial y es que valores dinamicos pueden ser definidos dentro de la cadena usando la sintaxis ${valorDinamico} solo se deben usar cuandos es apropiado y para cadenas normales es recomendable escoger un metodo de definirlas y mantenerlo todo el programa
 
 * number : todos los caracteres alfa numericos entran en esta categoria
 
@@ -34,9 +34,9 @@ los datos primitivas son definidos normalmente como valores puros, es un valor a
 
 y los tipos de datos o estrucuturas especiales que son Object, y Function 
 
-* array : es un objeto cuyas llaves son numericas asendentes y en el se pueden guardar cualquier tipo de valor
-
 * object: una estructura de datos en la que puede definirse cada una de sus llaves que serviran de referencia para cada valor almacenado en ellas
+
+* array : es un objeto cuyas llaves son numericas asendentes y en el se pueden guardar cualquier tipo de valor
 
 * function : un objeto especial que ejecuta un bloque de codigo y devuelve un valor o no
 
@@ -79,7 +79,7 @@ function nombre(parametro){
 nombre("hola")
 ```
 
-delcarada como una expresion
+declarada como una expresion
 ```js
 const nombre = function(parametro){
    console.log(parametro)
