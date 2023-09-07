@@ -169,9 +169,9 @@ y === [ 1, 2 ];    // false
 x === [ 1, 2 ];    // false
 ```
 
-### comparacion coerciva
+### comparacion coercitiva
 
-como ya defini anteriormente, comparacion coersiva es cuando durante la comparacion una de las expresiones es convertida para que ambas compartan el mismo tipo y asi poder comparar solo los valores de las expresiones, esto podria considerarse superfluo o hasta indeseado pero es imposible evitarlo, ya que los otras operacion comparativas como ">, <, >=, etc" utilizan este metodo comparativo
+como ya defini anteriormente, comparacion coercitiva es cuando durante la comparacion una de las expresiones es convertida para que ambas compartan el mismo tipo y asi poder comparar solo los valores de las expresiones, esto podria considerarse superfluo o hasta indeseado pero es imposible evitarlo, ya que los otras operacion comparativas como ">, <, >=, etc" utilizan este metodo comparativo
 
 ```js
 false < 1 // true
