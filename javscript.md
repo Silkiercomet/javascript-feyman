@@ -42,11 +42,11 @@ y los tipos de datos o estrucuturas especiales que son Object, y Function
 
 ## declaradores
 
-estos son palaabras claves especificas y solo permitidas para la declaracion de variables, estas son var , let, const
+estos son palabras claves especificas y solo permitidas para la declaracion de variables, estas son var , let, const
 
-- var : declara la variable en el scope global de la aplicacion, lo que la hace accesible en cualquier parte del programa (con cuidado porque dependiendo del nombre podria traer problemas al coincider con otras variables incluso si no estan en el scope global) 
+- var : declara la variable en el scope global de la aplicacion, lo que la hace accesible en cualquier parte del programa (con cuidado porque dependiendo del nombre podria traer problemas al coincider con otras variables ya que es giardada en el objeto global del navegador).
 
-- let : este define la varaible y lo restringe al block scope en que se encuentra, un block scope es el bloque de codigo que se encuentra entre un par de corchetes {} esta variable solo existira y sera accesible en su bloque
+- let : este define la varaible y lo restringe al block scope en que se encuentra, un block scope es el bloque de codigo que se encuentra entre un par de corchetes {} esta variable solo existira y sera accesible en su bloque.
 
 - const : una variable constante que tiene que ser inicializada con un valor y no permite reasignarlo a diferencia de las alternativas anteriores, si se le asigna a un objeto si se le permite mutar los valores del objeto pero no el objeto o arreglo en si
 
@@ -108,7 +108,7 @@ whatToSay.greeting();
 
 ## comparaciones
 
-Js nos permite comparar dos expresiones con el uso de ciertos simbolos como "===" esta es una comparacion estricta, evalua el tipo del dato y el dato de la expresion el simbolo "==" tambien compara el tipo y el dato de la expresion pero este permite convertir el tipo de una de las expresiones para que estas puedan ser evaluadas
+Js nos permite comparar dos expresiones con el uso de ciertos simbolos como "===" esta es una comparacion estricta, evalua el tipo del dato y el dato de la expresion, el simbolo "==" tambien compara el tipo y el dato de la expresion pero este permite convertir el tipo de una de las expresiones para que estas puedan ser evaluadas
 
 ```js
 //igualdad estricta
@@ -169,20 +169,20 @@ y === [ 1, 2 ];    // false
 x === [ 1, 2 ];    // false
 ```
 
-### comparacion coercitiva
+### comparacion coerciva
 
-como ya defini anteriormente, comparacion coercitiva es cuando durante la comparacion una de las expresiones es convertida para que ambas compartan el mismo tipo y asi poder comparar solo los valores de las expresiones, esto podria considerarse superfluo o hasta indeseado pero es imposible evitarlo, ya que los otras operacion comparativas como ">, <, >=, etc" utilizan este metodo comparativo
+como ya defini anteriormente, comparacion coersiva es cuando durante la comparacion una de las expresiones es convertida para que ambas compartan el mismo tipo y asi poder comparar solo los valores de las expresiones, esto podria considerarse superfluo o hasta indeseado pero es imposible evitarlo, ya que los otras operacion comparativas como ">, <, >=, etc" utilizan este metodo comparativo
 
 ```js
 false < 1 // true
 5 > "1" // true
--14 < true // falso
+-14 < true // true
 false != 0 // false
 
 var x = "10";
 var y = "9";
 
-x < y;      // true, watch out! si ambos valores comparten el mismo tipo no se realizara ninguna conversion
+x < y // true, watch out! si ambos valores comparten el mismo tipo no se realizara ninguna conversion
 ```
 
 ## Como organizar JS
@@ -420,13 +420,3 @@ for (let val of arr) {
 
 ## clousures
 
-
-```js
-const
-```
-```js
-const
-```
-```js
-const
-```
